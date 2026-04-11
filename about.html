@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — Soley Psychiatry</title>
+  <meta name="description" content="Meet the dedicated team of psychiatrists, psychologists, and therapists at Soley Psychiatry in San Francisco.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="Soleylogo.png" alt="Soley Psychiatry Logo">
+      <div class="nav-logo-text">
+        <span class="nav-logo-name" style="color:var(--dark);">Soley Psychiatry</span>
+        <span class="nav-logo-tag" style="color:var(--text-light);">Since 1994 · San Francisco, CA</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" style="color:var(--dark);">Home</a>
+      <a href="about.html" class="active" style="color:var(--primary);">Our Team</a>
+      <a href="contact.html" style="color:var(--dark);">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta" style="background:var(--primary);color:white;border-color:var(--primary);">Book Appointment</a>
+    <button class="nav-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+      <span style="background:var(--dark);"></span>
+      <span style="background:var(--dark);"></span>
+      <span style="background:var(--dark);"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Our Team</span>
+    </div>
+    <h1>Meet Our Expert Team</h1>
+    <p>A multidisciplinary group of psychiatrists, psychologists, and therapists dedicated to your mental wellness.</p>
+  </div>
+</section>
+
+<!-- ABOUT INTRO -->
+<section class="about-intro">
+  <div class="container">
+    <div class="about-intro-grid">
+      <div class="about-intro-img">
+        <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-0212.jpg"
+             alt="Dr. Mustafa K. Soley"
+             onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80'">
+      </div>
+      <div class="about-intro-content">
+        <span class="label">Founder & Lead Psychiatrist</span>
+        <h2>Dr. Mustafa K. Soley, MD</h2>
+        <p>Dr. Soley founded Soley Psychiatry in 1994 with a clear mission: to provide compassionate, evidence-based psychiatric care to the San Francisco community. Over three decades, he has built a team of highly skilled specialists covering every aspect of mental health.</p>
+        <p>Fluent in both English and Turkish, Dr. Soley is especially committed to serving multicultural patients who benefit from care provided in their native language. He practices during the first week of each month.</p>
+        <div class="about-values">
+          <div class="about-value">
+            <div class="check">✓</div>
+            <p>Board-Certified Psychiatrist</p>
+          </div>
+          <div class="about-value">
+            <div class="check">✓</div>
+            <p>English & Turkish Speaking</p>
+          </div>
+          <div class="about-value">
+            <div class="check">✓</div>
+            <p>30+ Years in Practice</p>
+          </div>
+          <div class="about-value">
+            <div class="check">✓</div>
+            <p>Compassionate Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM SECTION -->
+<section class="team section" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Our Specialists</span>
+      <h2>The People Behind Your Care</h2>
+      <p>Our diverse, highly qualified team is here to provide you with the best possible mental health support.</p>
+    </div>
+    <div class="team-grid">
+
+      <!-- Dr. Mustafa K. Soley -->
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-0212.jpg"
+               alt="Dr. Mustafa K. Soley"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👨‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Mustafa K. Soley</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            <strong>First week of each month</strong><br>
+            Mon–Fri: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English · Turkish</span>
+        </div>
+      </div>
+
+      <!-- Dr. MaryAnn Klein -->
+      <div class="team-card fade-in fade-in-delay-2">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6829.jpg"
+               alt="Dr. MaryAnn Klein"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. MaryAnn Klein</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Rayiha Arif -->
+      <div class="team-card fade-in fade-in-delay-3">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6830.jpg"
+               alt="Rayiha Arif"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍🔬</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Rayiha Arif</h3>
+          <p class="team-title">PhD · Psychotherapist & Clinical Hypnotherapist</p>
+          <div class="team-details">
+            Mon–Wed: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English · Arabic</span>
+        </div>
+      </div>
+
+      <!-- Dr. Josue Rabelo -->
+      <div class="team-card fade-in fade-in-delay-4">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6842.jpg"
+               alt="Dr. Josue Rabelo"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👨‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Josue Rabelo</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM
+          </div>
+          <span class="team-lang">🌍 English · Spanish</span>
+        </div>
+      </div>
+
+      <!-- Dr. Liana Gerr -->
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6831.jpg"
+               alt="Dr. Liana Gerr"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Liana Gerr</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            Mon · Wed · Fri: 9 AM–6 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Katerina Bamco -->
+      <div class="team-card fade-in fade-in-delay-2">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6833.jpg"
+               alt="Katerina Bamco"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍🔬</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Katerina Bamco</h3>
+          <p class="team-title">PhD · Psychologist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Dr. Girish Patel -->
+      <div class="team-card fade-in fade-in-delay-3">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6844.jpg"
+               alt="Dr. Girish Patel"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👨‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Girish Patel</h3>
+          <p class="team-title">MD · Neurologist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM
+          </div>
+          <span class="team-lang">🌍 English · Gujarati</span>
+        </div>
+      </div>
+
+      <!-- Dr. Jane Richeyson -->
+      <div class="team-card fade-in fade-in-delay-4">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6834.jpg"
+               alt="Dr. Jane Richeyson"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Jane Richeyson</h3>
+          <p class="team-title">MD · Psychiatrist & Clinical Hypnotherapist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Rani Pieretti -->
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6836.jpg"
+               alt="Rani Pieretti"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍🔬</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Rani Pieretti</h3>
+          <p class="team-title">PhD · Psychologist & Hypnotherapist</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Dr. Sherrini Mesut -->
+      <div class="team-card fade-in fade-in-delay-2">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6837.jpg"
+               alt="Dr. Sherrini Mesut"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Sherrini Mesut</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            Mon · Wed: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Dr. Patrick Damplem -->
+      <div class="team-card fade-in fade-in-delay-3">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6845.jpg"
+               alt="Dr. Patrick Damplem"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👨‍⚕️</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Dr. Patrick Damplem</h3>
+          <p class="team-title">MD · Psychiatrist</p>
+          <div class="team-details">
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Nichole Bataman -->
+      <div class="team-card fade-in fade-in-delay-4">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6840.jpg"
+               alt="Nichole Bataman"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍💼</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Nichole Bataman</h3>
+          <p class="team-title">Clinic Secretary</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM<br>
+            Sat: 10 AM–4 PM
+          </div>
+          <span class="team-lang">🌍 English</span>
+        </div>
+      </div>
+
+      <!-- Jasmin Tota -->
+      <div class="team-card fade-in fade-in-delay-1">
+        <div class="team-card-img-wrap">
+          <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6843.jpg"
+               alt="Jasmin Tota"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="team-card-avatar" style="display:none;">👩‍💼</div>
+        </div>
+        <div class="team-card-body">
+          <h3>Jasmin Tota</h3>
+          <p class="team-title">Clinic Secretary</p>
+          <div class="team-details">
+            Mon–Fri: 9 AM–6 PM
+          </div>
+          <span class="team-lang">🌍 English · Spanish</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery section" style="background:white;">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="label">Gallery</span>
+      <h2>Our Practice</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in" onclick="openLightbox('http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6838-1-150x150.jpg')">
+        <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6838-1-150x150.jpg" alt="Gallery" loading="lazy">
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6835-1-150x150.jpg')">
+        <img src="http://www.mksoley.com/wp-content/uploads/2020/08/IMG-6835-1-150x150.jpg" alt="Gallery" loading="lazy">
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('http://www.mksoley.com/wp-content/uploads/2020/08/Screenshot_2018-08-15-17-16-24-150x150.jpg')">
+        <img src="http://www.mksoley.com/wp-content/uploads/2020/08/Screenshot_2018-08-15-17-16-24-150x150.jpg" alt="Gallery" loading="lazy">
+      </div>
+      <div class="gallery-item fade-in" onclick="openLightbox('http://www.mksoley.com/wp-content/uploads/2020/08/83436-73917-150x150.jpg')">
+        <img src="http://www.mksoley.com/wp-content/uploads/2020/08/83436-73917-150x150.jpg" alt="Gallery" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="padding:80px 0;">
+  <div style="max-width:700px;margin:0 auto;text-align:center;padding:0 24px;position:relative;z-index:1;">
+    <h2 style="color:white;margin-bottom:16px;">Ready to Meet Our Team in Person?</h2>
+    <p style="color:rgba(255,255,255,0.75);margin-bottom:32px;font-size:1.05rem;">Schedule a consultation and take the first step toward better mental health today.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="Soleylogo.png" alt="Logo">
+        <span class="logo-name">Soley Psychiatry</span>
+      </div>
+      <p>Providing compassionate psychiatric care, psychotherapy, and clinical hypnotherapy to the San Francisco community since 1994.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="mailto:info@mksoley.com" class="social-btn">@</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About &amp; Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Specialties</h4>
+      <ul>
+        <li><a href="#">Psychiatry</a></li>
+        <li><a href="#">Psychotherapy</a></li>
+        <li><a href="#">Hypnotherapy</a></li>
+        <li><a href="#">Neurology</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>1421 Broderick St.<br>San Francisco, CA 94115</p>
+      <br>
+      <p><a href="mailto:info@mksoley.com" style="color:var(--secondary);">info@mksoley.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Soley Psychiatry. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Navbar already scrolled on inner pages
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) navbar.classList.add('scrolled');
+});
+
+// Fade-in
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => observer.observe(el));
+
+function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
+</script>
+</body>
+</html>

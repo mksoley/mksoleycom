@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Soley Psychiatry</title>
+  <meta name="description" content="Contact Soley Psychiatry in San Francisco. Book an appointment with our expert psychiatric team. Address: 1421 Broderick St., San Francisco, CA 94115.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="Soleylogo.png" alt="Soley Psychiatry Logo">
+      <div class="nav-logo-text">
+        <span class="nav-logo-name" style="color:var(--dark);">Soley Psychiatry</span>
+        <span class="nav-logo-tag" style="color:var(--text-light);">Since 1994 · San Francisco, CA</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" style="color:var(--dark);">Home</a>
+      <a href="about.html" style="color:var(--dark);">Our Team</a>
+      <a href="contact.html" class="active" style="color:var(--primary);">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta" style="background:var(--primary);color:white;border-color:var(--primary);">Book Appointment</a>
+    <button class="nav-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+      <span style="background:var(--dark);"></span>
+      <span style="background:var(--dark);"></span>
+      <span style="background:var(--dark);"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="current">Contact</span>
+    </div>
+    <h1>Get In Touch</h1>
+    <p>We're here to help. Reach out to schedule an appointment or ask any questions about our services.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-page">
+  <div class="container">
+
+    <!-- Info Cards Row -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:64px;">
+
+      <div class="contact-info-card fade-in fade-in-delay-1">
+        <div class="icon">📍</div>
+        <div>
+          <h4>Our Address</h4>
+          <p>1421 Broderick St.<br>San Francisco, CA 94115</p>
+        </div>
+      </div>
+
+      <div class="contact-info-card fade-in fade-in-delay-2">
+        <div class="icon">✉️</div>
+        <div>
+          <h4>Email Us</h4>
+          <p><a href="mailto:info@mksoley.com">info@mksoley.com</a></p>
+          <p style="font-size:0.8rem;color:var(--text-light);margin-top:4px;">We reply within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="contact-info-card fade-in fade-in-delay-3">
+        <div class="icon">🕐</div>
+        <div>
+          <h4>Office Hours</h4>
+          <p>Mon–Fri: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Main Grid: Form + Map/Info -->
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Info + Languages -->
+      <div class="contact-info">
+
+        <div style="background:white;border-radius:var(--radius);padding:32px;border:1px solid var(--border);" class="fade-in">
+          <h3 style="margin-bottom:8px;">Schedule an Appointment</h3>
+          <p style="font-size:0.88rem;margin-bottom:24px;">Fill out the form and our team will contact you within one business day to confirm your appointment.</p>
+
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--bg);border-radius:var(--radius-sm);">
+              <span style="font-size:1.4rem;">🌍</span>
+              <div>
+                <div style="font-size:0.8rem;font-weight:700;color:var(--text);margin-bottom:2px;">Languages Spoken</div>
+                <div style="font-size:0.85rem;color:var(--text-light);">English · Turkish · Arabic · Spanish · Gujarati</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--bg);border-radius:var(--radius-sm);">
+              <span style="font-size:1.4rem;">♿</span>
+              <div>
+                <div style="font-size:0.8rem;font-weight:700;color:var(--text);margin-bottom:2px;">Accessibility</div>
+                <div style="font-size:0.85rem;color:var(--text-light);">Our office is wheelchair accessible</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--bg);border-radius:var(--radius-sm);">
+              <span style="font-size:1.4rem;">🅿️</span>
+              <div>
+                <div style="font-size:0.8rem;font-weight:700;color:var(--text);margin-bottom:2px;">Parking</div>
+                <div style="font-size:0.85rem;color:var(--text-light);">Street parking available on Broderick St.</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:16px;background:var(--bg);border-radius:var(--radius-sm);">
+              <span style="font-size:1.4rem;">🚌</span>
+              <div>
+                <div style="font-size:0.8rem;font-weight:700;color:var(--text);margin-bottom:2px;">Public Transit</div>
+                <div style="font-size:0.85rem;color:var(--text-light);">Accessible via SFMTA bus lines</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Staff Note -->
+        <div style="background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:var(--radius);padding:32px;color:white;" class="fade-in">
+          <div style="font-size:2rem;margin-bottom:12px;">💡</div>
+          <h3 style="color:white;margin-bottom:10px;">New Patients Welcome</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;line-height:1.8;">We are currently accepting new patients for most of our providers. Please fill out the contact form and we'll match you with the right specialist for your needs.</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contact-form-card fade-in">
+        <h3>Send Us a Message</h3>
+        <p>We'll get back to you as soon as possible.</p>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(415) 555-0100">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>Psychiatry &amp; Medication Management</option>
+              <option>Psychotherapy</option>
+              <option>Clinical Hypnotherapy</option>
+              <option>Child &amp; Adolescent Psychiatry</option>
+              <option>Neurology</option>
+              <option>General Consultation</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="preferred">Preferred Appointment Time</label>
+            <select id="preferred" name="preferred">
+              <option value="">Select a preference...</option>
+              <option>Weekday Morning (9 AM – 12 PM)</option>
+              <option>Weekday Afternoon (12 PM – 6 PM)</option>
+              <option>Saturday Morning (10 AM – 1 PM)</option>
+              <option>Saturday Afternoon (1 PM – 4 PM)</option>
+              <option>Flexible / No Preference</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us a bit about your needs</label>
+            <textarea id="message" name="message" placeholder="Please describe what you're looking for help with (this is confidential)..."></textarea>
+          </div>
+
+          <div style="margin-bottom:16px;">
+            <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;font-size:0.83rem;color:var(--text-light);font-weight:400;">
+              <input type="checkbox" required style="width:auto;margin-top:2px;accent-color:var(--secondary);">
+              I consent to Soley Psychiatry contacting me regarding my inquiry. I understand my information will be kept confidential.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<div class="map-section">
+  <iframe
+    class="map-embed"
+    loading="lazy"
+    title="Soley Psychiatry Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0!2d-122.4387!3d37.7831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1421+Broderick+St%2C+San+Francisco%2C+CA+94115!5e0!3m2!1sen!2sus!4v1"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="Soleylogo.png" alt="Logo">
+        <span class="logo-name">Soley Psychiatry</span>
+      </div>
+      <p>Providing compassionate psychiatric care, psychotherapy, and clinical hypnotherapy to the San Francisco community since 1994.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="mailto:info@mksoley.com" class="social-btn">@</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About &amp; Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Specialties</h4>
+      <ul>
+        <li><a href="#">Psychiatry</a></li>
+        <li><a href="#">Psychotherapy</a></li>
+        <li><a href="#">Hypnotherapy</a></li>
+        <li><a href="#">Neurology</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>1421 Broderick St.<br>San Francisco, CA 94115</p>
+      <br>
+      <p><a href="mailto:info@mksoley.com" style="color:var(--secondary);">info@mksoley.com</a></p>
+      <br>
+      <p>Mon–Fri: 9 AM – 6 PM<br>Sat: 10 AM – 4 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Soley Psychiatry. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 60) navbar.classList.add('scrolled');
+});
+
+const fadeEls = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => observer.observe(el));
+
+function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  // Simulate form submission
+  setTimeout(() => {
+    e.target.reset();
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    showToast('✅ Thank you! We\'ll be in touch within one business day.');
+  }, 1500);
+}
+</script>
+</body>
+</html>
